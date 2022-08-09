@@ -10,14 +10,15 @@ INSTALLATION:
 
 ALGORITHM:
 1.	The instrument and driver use MQTT protocol for the data transfer and monitoring. The data flow diagram below well explains the overall workflow.
-2.	In this project the instrument is continuously publishing the data to the broker.
-3.	The device has subscribed to the instrument published data through the broker.
-4.	On sending the command through the Driver it will show the respective value.
-5.	To demonstrate we have taken the random value generator function and with the probability it is showing the weights
+2.	In this project, the node app tries to simulate an environment similar to an analytical instrument for measuring weights. 
+3.	Based on the weighted probabilities, a random state is simulated (Dynamic Weight/NotExecutable/Overload/Underload).   
+4.	This node app is continuously publishing the  instrument simulator data every second to the public broker.
+5.	The device has subscribed to the instrument published data through the broker.
+6.	Driver app can send this data to the Front end app based on command (API request).
 
 
 WEIGHTS:
-1.	Stable weight – 80%<br />
+1.	Dynamic/Stable weight – 80%<br />
 2.	Command not executable – 10%<br />
 3.	Balance in overload range – 5%<br />
 4.	Balance in underload range – 5%<br />
