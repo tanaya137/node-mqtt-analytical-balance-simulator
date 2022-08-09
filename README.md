@@ -14,7 +14,7 @@ ALGORITHM:
 3.	Based on the weighted probabilities, a random state is simulated (Dynamic Weight/NotExecutable/Overload/Underload).   
 4.	This node app is continuously publishing the  instrument simulator data every second to the public broker.
 5.	The device has subscribed to the instrument published data through the broker.
-6.	Driver app can send this data to the Front end app based on command (API request).
+6.	Driver app can send this data to the Front end app based on (S, SI, SIR) command /API request.
 
 
 WEIGHTS:
